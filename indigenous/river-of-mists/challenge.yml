@@ -1,0 +1,26 @@
+name: River of Mists
+author: Sam A. Try
+category: indigenous
+description: |-
+  Author: Sam A. Try
+
+  Follow the flow. Know the origin.
+  What you are looking for was accidentally swallowed by a creature at the location where this photo was captured. When it realised what it had in its stomach, it escaped to the closest CITY as seen in the photo.
+  Upon arriving at the city, it continued through the river until reaching the river's source. Once you arrive there, the creature will show you a sign written like pecan{TheRiver'sNameByTheWurundjeriPeople_PostCodeOfTheRiverSource}.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{Birrarung_3833}
+
+files:
+- last-seen-location-creature.jpg
+
+version: '0.1'

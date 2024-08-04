@@ -1,0 +1,22 @@
+name: Shaken Not Stirred
+author: Tyler Schwehr
+category: forensics
+description: |-
+  Author: Tyler Schwehr
+
+  My mate told me that if I shake my laptop I can shuffle the bytes in my files, bloody hell it worked! Now I can't view any of my files, can you help me with this image?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{3ex7ension5_m@773r}
+
+files:
+- file.jpg
+
+version: '0.1'

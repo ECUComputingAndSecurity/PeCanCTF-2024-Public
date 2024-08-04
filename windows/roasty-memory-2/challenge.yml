@@ -1,0 +1,27 @@
+name: Roasty Memory 2
+author: Chris Fitzsimons (CyberCX)
+category: windows
+description: |-
+  Author: Chris Fitzsimons (CyberCX)
+
+  This challenge is a part of the series Roasty Memory. You can download the memory file from the first challenge (Part 1).
+
+  Use the memory dump provided to find the executable which was ran on the machine and the process id it executed from.
+
+  The flag will be in the format of `pecan{executable_pid}` and will be all lower case. Split your answers with an `_`.
+
+  Example flag is `pecan{malware.exe_2222}`
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{rubeus.exe_3536}
+
+version: '0.1'

@@ -1,0 +1,8 @@
+# CTF
+.ctf/
+.devcontainer/
+
+# macOS
+._.git
+.DS_Store
+

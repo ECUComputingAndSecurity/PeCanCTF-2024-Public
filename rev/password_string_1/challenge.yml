@@ -1,0 +1,26 @@
+name: Password String 1
+author: Memphis Marshall
+category: rev
+description: |-
+  Author: Memphis Marshall
+
+  Can you crack the password?
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 2
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  content: pecan{4lw4y5_7ry_5tr1ng5}
+  data: case_insensitive
+
+files:
+- authenticate
+
+version: '0.1'
+tests:
+- script: solve.sh

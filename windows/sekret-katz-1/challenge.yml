@@ -1,0 +1,31 @@
+name: Sekret Katz 1
+author: torry2
+category: windows
+description: |-
+  Author: torry2
+
+  I upgraded Windows but it failed! That's the least of my worries however, as I forgot my password in the process! Can you help me try remember my password? All I have left is this backup directory, hopefully windows stores passwords here...
+
+  Note: try use pypykatz (not impacket) 
+  Flag Format: pecan{PASSWORD}
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: 'pecan{P@ssw0rd!}'
+
+files:
+- upgrade.zip
+
+hints:
+- These secrets belong to SAM, try googling for SAM secrets
+- You wouldn't delete system32!!
+
+version: '0.1'

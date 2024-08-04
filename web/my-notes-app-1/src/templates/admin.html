@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <h1>Woah Admin Here!</h1>
+    {% if message is defined %}
+    <p>{{ message }}</p>
+    {% else %}
+    <p>Don't forget the secret key: "PECAN{lol_it_isnt_this_easy}"</p>
+    {% endif %}
+
+</div>
+<div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <script>const _secure = "{{ secret }}"</script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

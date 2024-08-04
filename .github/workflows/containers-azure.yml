@@ -1,0 +1,91 @@
+name: Deploy containers to Azure
+
+on:
+  push:
+    branches:
+      - main
+    # TODO match on regex instead
+    paths:
+      - pwn/**
+      - web/**
+      - crypto/**
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+
+      - uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
+        with:
+          python-version: 3.x
+          cache: pip
+
+      - name: Setup ctfcli
+        run: |
+          pip install -r requirements.txt
+          ctf plugins install https://github.com/pl4nty/ctfcli-deploy-azure.git
+
+          mkdir .ctf
+          cat <<EOF > .ctf/config
+          [config]
+          url = https://${{ vars.CTFD_DOMAIN }}
+          access_token = ${{ secrets.CTFD_TOKEN }}
+
+          [cookies]
+          site_password = ${{ secrets.CTFD_SITE_PASSWORD }}
+
+          [challenges]
+          EOF
+
+          shopt -s extglob
+          for chal in ?(pwn|web|crypto|misc)/*/; do
+            echo "$chal = $chal" >> .ctf/config
+          done
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          install: true
+      - name: Set up Namespace CLI
+        uses: namespacelabs/nscloud-setup@v0
+      - name: Set up Docker Buildx
+        uses: namespacelabs/nscloud-setup-buildx-action@v0
+
+      # azure-identity doesn't support GitHub WIF
+      - uses: azure/login@8c334a195cbb38e46038007b304988d888bf676a # v2
+        with:
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Setup Azure Container Registry
+        run: az acr login --name ${{ vars.REGISTRY }}
+
+      # TODO raise issue, throws error even if target challenge isn't deployable. ignore all errors for now
+      - name: Deploy containers
+        run: ctf challenge deploy --skip-login --host "azure://management.azure.com${{ vars.AZURE_CONTAINER_ENV }}?registry=${{ vars.REGISTRY }}&identity=${{ vars.AZURE_CONTAINER_IDENTITY }}&suffix=${{ vars.AZURE_CONTAINER_SUFFIX }}" || true
+
+      - name: Setup GitHub container registry
+        uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20 # v3.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+
+      - name: Push container images to GitHub
+        run: |-
+          images=$(docker images $REGISTRY/*:latest --format "{{.Repository}}")
+          for image in $images; do
+            lowercase=${GITHUB_REPOSITORY_OWNER,,}
+            newtag=${image//$REGISTRY/ghcr\.io\/$lowercase}:latest
+            docker tag $image:latest $newtag
+            docker push $newtag
+          done
+        env:
+          REGISTRY: ${{ vars.REGISTRY }}

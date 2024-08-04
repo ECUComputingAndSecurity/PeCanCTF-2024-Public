@@ -1,0 +1,1 @@
+ctfcli @ git+https://github.com/CTFd/ctfcli@master

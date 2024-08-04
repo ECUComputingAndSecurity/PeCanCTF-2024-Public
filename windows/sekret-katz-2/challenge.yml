@@ -1,0 +1,36 @@
+name: Sekret Katz 2
+author: torry2
+category: windows
+description: |-
+  Author: torry2
+
+  Now I have my password, I'll use it for a password manager, up until this point I just saved them all in the browser. My system is wiped after the failed update but I made sure to take a backup of my home folder, that should cover everything even if I don't know about it. Can you grab my browser passwords?
+  
+  Note: This requires information from solving part 1
+  Flag Format: As Given
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{1_cL1cK3d_n0t_n0w!}
+
+files:
+- backup.zip
+
+hints:
+- What API does Windows use to store these passwords?
+- Use the same tool as Part 1, many exist to automate this, you just have to do it
+  offline
+- 'Check out: <https://ippsec.rocks/?#>'
+
+requirements:
+- Sekret Katz 1
+
+version: '0.1'

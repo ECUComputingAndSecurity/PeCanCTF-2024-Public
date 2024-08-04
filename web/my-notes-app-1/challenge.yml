@@ -1,0 +1,24 @@
+name: My Notes App
+author: RiskyMH
+category: web
+description: |-
+  Author: RiskyMH
+
+  Do you like my notes app? I will have you know it is *very secure* because I store my most important things here.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: https
+
+flags:
+- type: static
+  content: pecan{jwt_1z_juzt_j50n?}
+  data: case_insensitive
+
+version: '0.1'

@@ -1,0 +1,27 @@
+name: Coffee Shop
+author: keiru
+category: osint
+description: |-
+  Author: keiru
+
+  I went to this coffee shop with my childhood friend earlier this year and it was really good!
+  However, I have no idea who founded the coffee shop..., but most importantly, I had this pour over coffee that had floral, tangerine and white tea tasting notes, and it became available in London somewhere in the first half of 2023 and I can't seem to remember the item name, how it's processed, or the origin of this specific roast. Maybe there is some way to find out?
+  **Flag Format**: `pecan{<Founder_Name>_<Item_Name>_<Process_Method>_<RoastOrigin>}`
+  Note: Spaces should be replaced with an underscore (\_), and remove the angle brackets.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{Lok_Chan_El_Puente_Anaerobic_Washed_Honduras}
+
+files:
+- IMG_4593.jpeg
+
+version: '0.1'

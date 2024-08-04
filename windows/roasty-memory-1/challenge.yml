@@ -1,0 +1,30 @@
+name: Roasty Memory 1
+author: Chris Fitzsimons (CyberCX)
+category: windows
+description: |-
+  Author: Chris Fitzsimons (CyberCX)
+
+  Something strange has been happening on my computer. Can you help figure out what happened?
+
+  Use the memory dump provided to find the IP address of the domain controller and domain used by the attacker to host their files.
+
+  The flag will be in the format of `pecan{ipaddress_domain}` and will be all lower case. Split your answers with an `_`.
+
+  Example flag is `pecan{192.168.1.1_malicious.domain}`
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{192.168.253.130_notsuspicious.local}
+
+files:
+- roasty.zip
+
+version: '0.1'

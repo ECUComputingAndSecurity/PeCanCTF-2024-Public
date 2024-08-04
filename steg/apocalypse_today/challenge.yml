@@ -1,0 +1,22 @@
+name: Apocalypse Today
+author: Tyler Schwehr
+category: steg
+description: |-
+  Author: Tyler Schwehr
+
+  A perfectly reasonable man gave me this image, he told me that it holds the date of the apocalypse. I'm having trouble finding the date, do you think you could help?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{7h3_3nd_i5_n3@r}
+
+files:
+- image.jpg
+
+version: '0.1'

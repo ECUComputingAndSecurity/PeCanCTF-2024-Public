@@ -1,0 +1,27 @@
+name: Roasty Memory 3
+author: Chris Fitzsimons (CyberCX)
+category: windows
+description: |-
+  Author: Chris Fitzsimons (CyberCX)
+
+  This challenge is a part of the series Roasty Memory. You can download the memory file from the first challange (Part 1).
+
+  Use the memory dump to extract information which will allow you to obtain the passwords of the Administrator and Backup accounts.
+
+  The flag will be in the format of `pecan{administratorpassword_backuppassword}` and will be all lower case. Split your answers with an `_`.
+
+  Example flag is `pecan{admin123!_backup123!}`
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{headache!_breakingfree!}
+
+version: '0.1'

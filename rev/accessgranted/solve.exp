@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+# expect automates using interactive applications
+
+spawn ./system
+
+expect "Enter Username: "
+send -- "BILL.F@CTF.LOCAL\n"
+
+expect "Enter Password: "
+send -- "iF0\\/NdtH3p4\$5\n"
+
+expect "Enter Key: "
+send -- "4905\n"
+
+interact

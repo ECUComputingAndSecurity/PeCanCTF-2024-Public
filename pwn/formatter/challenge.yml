@@ -1,0 +1,30 @@
+name: formatter
+author: just jay i guess
+category: pwn
+description: |-
+  Author: just jay i guess
+
+  I accidentally made my work-in-progress public and had some private information
+  stolen. Can you recreate the attack so I can find out what happened?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: tcp
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{br0___f0rm4tting_%s_to0_h4rd}
+
+files:
+- vuln
+- vuln.c
+- Dockerfile
+
+version: '0.1'

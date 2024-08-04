@@ -1,0 +1,21 @@
+name: survey
+author: pl4nty
+category: misc
+description: Tell us what you thought about PECAN+ 2024. Every bit of feedback helps!
+type: dynamic
+
+extra:
+  initial: 100
+  decay: 4
+  function: linear
+  minimum: 100
+connection_info: https://forms.office.com/r/vv5z9keiLw
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{feedback_makes_the_world_go_round}
+
+state: hidden
+
+version: '0.1'

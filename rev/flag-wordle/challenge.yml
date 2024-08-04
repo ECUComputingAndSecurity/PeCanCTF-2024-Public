@@ -1,0 +1,24 @@
+name: Flag wordle
+author: Jeremy Karagania
+category: rev
+description: |-
+  Author: Jeremy Karagania
+
+  Have you ever played Wordle with a 44 character word? No? Now you will! The flag is the correct word. Can you beat, cheat, or reverse the game and capture the flag? For your information, the number of correct characters is also the return code.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{th15_f14g_h4s_s0_much_3ntr0py_4432477}
+
+files:
+- flag_wordle
+
+version: '0.1'

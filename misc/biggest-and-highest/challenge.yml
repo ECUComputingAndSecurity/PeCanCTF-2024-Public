@@ -1,0 +1,24 @@
+name: Biggest and Highest
+author: Sam A. Try
+category: misc
+description: |-
+  Author: Sam A. Try
+
+  The flag is posted at the highest Location in the biggest state of Australia. "mount ???????" is written in a philosophical way. To understand that written style, you need to go through the door by using the First Nations Name of The Capital City of that state as a case-sensitive key. Learn from the philosophy, and apply it. Rest assured, you'll get the flag, all in lower case. Flag format: pecan{word1_word2}
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{jlrkq_jbexoov}
+
+files:
+- Philosophy.zip
+
+version: '0.1'

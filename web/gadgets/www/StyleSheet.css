@@ -1,0 +1,90 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 120px;
+    position:sticky;
+    top:0px;
+    background-color: #eee;
+    box-shadow: 2px 2px 6px grey;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 90px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 70px;    
+}
+
+.menu {
+    float: right;
+    margin-right: 70px;
+}
+
+.menu a {
+    float:left;
+    padding: 14px 20px 14px 20px;
+    margin: 40px 20px 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.menu a:link, .menu a:visited {
+    color: #222;
+    background-color: lightskyblue;
+    text-decoration: none;
+}
+
+.menu a:hover, .menu a:active {
+    color: #fff;
+    background-color: blue;
+    text-decoration: underline;
+}
+
+/* Flag 2/3 '{tim3_t0_l3@rn' */
+.row {
+    width: 60vw;
+    padding: 20px 20% 20px 20%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+#gadget_box {
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #222;
+    background-color: #eee;
+}
+
+#gadget_text {
+    text-align: center;
+    color:#222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button {
+    margin: 10px 20px 10px 20px;
+    padding: 8px 16px 8px 16px;
+    font-size: large;
+}

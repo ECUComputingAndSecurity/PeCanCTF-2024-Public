@@ -1,0 +1,26 @@
+name: AccessGranted
+author: Lachlan Adamson
+category: rev
+description: |-
+  Author: Lachlan Adamson
+
+  Login to the system
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  content: pecan{BILL.F@CTF.LOCAL + iF0\/NdtH3p4$5 & 4905}
+  data: case_insensitive
+
+files:
+- system
+
+version: '0.1'
+tests:
+- solve.exp

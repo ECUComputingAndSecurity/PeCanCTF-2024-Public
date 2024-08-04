@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<!--This is the opening head tag-->
+<head>
+    <meta charset="utf-8" />
+    <title>Inspect Me!</title>
+
+    <!--This is an internal CSS section, it takes precedence over external CSS, but is subservient to inline CSS-->
+    <style type="text/css">
+
+        li, h1, h2, p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .md-width {
+            width: auto;
+            margin-left: 20%;
+            margin-right: 20%;
+        }        
+
+        #top-section {
+            font-size: 140%;
+            text-align:center;
+            padding-top: 20px;
+        }
+
+        #mid-section {
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;           
+        }
+
+        #bot-section {
+            color: red;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .center {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<!--This is where the head ends and the body begins-->
+<body>
+    <!--This is the top section, we use a div tag to keep it all contained together-->
+    <div class="md-width" id="top-section">
+        <!--There are 6 sizes of heading tags, with h1 being the biggest, and h6 being the smallest-->
+        <h1>I am the inspection man</h1>
+        <!--Did you know that most browsers use the hotkey ctrl+i to open the inspector utility-->
+        <h2>I want you to inspect me</h2>
+        <!--You can also right click any element on the page and select "inspect", that will also take you to the specific part of the code that you clicked-->
+        <hr />
+    </div>
+
+    <!--This is the mid section, we use a div tag to keep it tidy-->
+    <div class="md-width" id="mid-section">
+        <!--Images really add something to websites, don't you think?-->
+        <img class="center" src="inspect_me.jpg" />
+        <!--You can change the list type of an ordered list by using the type attribute-->
+        <ol>
+            <!--Sometimes using the inspector utility can be difficult to fully see the website-->
+            <li>Inspect me</li>
+            <!--That's where you'll want to use the "view source" option-->
+            <li>Inspect me</li>
+            <!--It lays out all of the web code in a much clearer and more readable format-->
+            <li><del>Don't'</del> inspect me</li>
+            <!--Most browsers use the hotkey ctrl+u to view the source-->
+            <li><ins>Inspect me some more</ins></li>
+            <!--Give it a go now! pecan{st0p_100king_@t_m3}, don't look at this, just use your view source-->
+            <li><em>Don't stop inspecting me</em></li>
+            <!--Using text formatting tags like "strong" and "em", can really add some flair-->
+            <li>Inspection raised to the power of inspection - Inspection<sup>Inspection</sup></li>
+            <!--Text formatting like "sup" and "sub" are really handy for displaying math equations-->
+            <li>Inspection base inspection - Inspection<sub>Inspection</sub></li>
+            <!--You can really do a lot of cool stuff with HTML, and as you can see here, it's not that hard-->
+            <li><strong>INSPECT ME!!</strong></li>
+            <!--You should spend some time this week learning a little HTML and see what you can make with it-->
+        </ol>
+    </div>
+
+    <!--This is the bot section, we use different id's to help us control how we display each section-->
+    <div class="md-width" id="bot-section">
+        <hr />
+        <!--Writing comments in HTML is quite annoying though, I'm not a fan of these tags-->
+        <h1>YOU SHOULD HAVE INSPECTED ME!</h1>
+    </div>
+
+    <!--This is the end, there is no more, I hope you learnt something new today-->
+</body>
+</html>

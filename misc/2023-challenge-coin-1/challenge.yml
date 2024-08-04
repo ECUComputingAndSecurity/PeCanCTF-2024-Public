@@ -1,0 +1,22 @@
+name: 2023 Challenge Coin 1
+author: Paul Haskell-Dowland
+category: misc
+description: |-
+  Author: Paul Haskell-Dowland
+
+  Competitors in the 2023 PECAN+ CTF received a challenge coin as a reward. If you can solve the layers of encryption, you will find a flag that can be submitted here. The format is pecan{FLAG}
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{07f2b86feadef008484f334aa85566b8}
+
+files:
+- 2023Coin.png
+
+version: '0.1'

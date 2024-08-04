@@ -1,0 +1,31 @@
+name: Ultimate Song
+author: RiskyMH
+category: steg
+description: |-
+  Author: RiskyMH
+
+  📻 Have a listen to John's favorite song with no interruptions.
+  Please submit the flag as the standard `pecan{text}`
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  content: pecan{thi5-15-r1ck-fun}
+  data: case_insensitive
+- type: static
+  content: pecan(thi5-15-r1ck-fun)
+  data: case_insensitive
+
+files:
+- awesome-song.mp3
+
+hints:
+- Consider listening to the song visually and observe pattens
+
+version: '0.1'

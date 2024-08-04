@@ -1,0 +1,28 @@
+name: Inspect Me
+author: Tyler Schwehr
+category: web
+description: |-
+  Author: Tyler Schwehr
+
+  Wow learning HTML is cool, check out my cool website. I sure hope that I haven't accidentally left any security vulnerabilities in it.
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 2
+  function: linear
+  minimum: 100
+
+image: .
+protocol: https
+
+flags:
+- type: static
+  content: pecan{st0p_100king_@t_m3}
+  data: case_insensitive
+
+hints:
+- >-
+  You can view the page source by right clicking the page and selecting "view source"
+
+version: '0.1'

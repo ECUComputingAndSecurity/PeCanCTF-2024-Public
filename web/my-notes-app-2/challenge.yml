@@ -1,0 +1,22 @@
+name: My Notes App 2
+author: RiskyMH
+category: web
+description: |-
+  Author: RiskyMH
+
+  Do you like my notes app? If you disagree, make a note ranting and don't it share with me!
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+connection_info: https://my-notes-app.chals.ecusdf.org
+
+flags:
+- type: static
+  content: pecan{wh@t?_1s_jwt_s3cur3???}
+  data: case_insensitive
+
+version: '0.1'

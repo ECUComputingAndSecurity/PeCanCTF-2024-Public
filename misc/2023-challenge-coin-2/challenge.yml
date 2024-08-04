@@ -1,0 +1,22 @@
+name: 2023 Challenge Coin 2
+author: Paul Haskell-Dowland
+category: misc
+description: |-
+  Author: Paul Haskell-Dowland
+
+  Solve the first part to find this challenge. The flag format is pecan{FLAG}
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{d329539644fcaf6c582caac77ffef719}
+
+requirements:
+- 2023 Challenge Coin 1
+
+version: '0.1'

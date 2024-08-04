@@ -1,0 +1,31 @@
+name: ROPed-in
+author: just jay i guess
+category: pwn
+description: |-
+  Author: just jay i guess
+
+  I found this very strange bot online somewhere, but I can't get an interesting response
+  from it. Surely there must be some way to have a better conversation with it...
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: tcp
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{ret_t0_s3nder_:o}
+
+files:
+- vuln
+- vuln.c
+- Dockerfile
+- build.sh
+
+version: '0.1'

@@ -1,0 +1,27 @@
+name: flag_dispeRSAl
+author: just jay i guess
+category: crypto
+description: |-
+  Author: just jay i guess
+
+  We've intercepted transmissions from an online user going by the name Sunzi, and our analysts believe they are trying to tell us something while evading detection by their enemies. It's up to you now to decode their message!
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: tcp
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{Q1n_Jiu5ha0s_dayan_5hu}
+
+files:
+- chall.py
+
+version: '0.1'

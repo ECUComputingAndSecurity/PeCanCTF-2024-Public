@@ -1,0 +1,25 @@
+name: This and that
+author: Winiata Lambert
+category: misc
+description: |-
+  Author: Winiata Lambert
+
+  Do you want to play a game?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{pl4y_by_th3_rul3s}
+
+files:
+- this_game.py
+- that_game.py
+
+version: '0.1'

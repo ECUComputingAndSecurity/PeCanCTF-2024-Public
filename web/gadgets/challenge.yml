@@ -1,0 +1,27 @@
+name: Gadgets
+author: Tyler Schwehr
+category: web
+description: |-
+  Author: Tyler Schwehr
+
+  Dr Claw seems to be up to his old tricks again. Can you help Inspector Gadget investigate this website for hidden information.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: https
+
+flags:
+- type: static
+  content: pecan{tim3_t0_l3@rn_w3b_d3v}
+  data: case_insensitive
+
+hints:
+- Inspecting source code can often reveal information about the website
+
+version: '0.1'

@@ -1,0 +1,30 @@
+name: Bufferlo
+author: just jay i guess
+category: pwn
+description: |-
+  Author: just jay i guess
+
+  Help! A massive herd of buffalo just invaded New York City, but there's only space for one! Can you help us convince the buffalo to leave?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: tcp
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{buff4l0_boffalo_bufferlo_8uffalo}
+
+files:
+- vuln
+- vuln.c
+- Dockerfile
+- build.sh
+
+version: '0.1'

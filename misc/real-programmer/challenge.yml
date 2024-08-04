@@ -1,0 +1,24 @@
+name: Real programmer
+author: Jeremy Karagania
+category: misc
+description: |-
+  Author: Jeremy Karagania
+
+  John is a Real Programmer: he uses punch cards to write programs in his favourite programming language. He has translated one of his programs into a source code file and sent it to you. Can you find out what this program does?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{l0ng_l1v3_f0rtr4n_4474}
+
+files:
+- real_programmer_program.f
+
+version: '0.1'

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <h1>{{ name }}'s notes</h1>
+    <form action="" method="POST">
+        <input name="input" ></input>
+        <button type="submit">+</button>
+    </form>
+
+    <ul>
+        {% for i in saved_notes %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}

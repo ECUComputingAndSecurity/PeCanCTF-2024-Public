@@ -1,0 +1,2 @@
+This challenge is designed to punish anyone attempting to shortcut the challenge by manually decrypting the flag.
+To solve, simply start by running **this_game.py** to decrypt **that_game.py**. Next, run **that_game.py** to decrypt the comment within **this_game.py**, where the flag is hidden.

@@ -1,0 +1,22 @@
+name: PublicStaticVoidMainStringArgs
+author: Lachlan Adamson
+category: rev
+description: |-
+  Author: Lachlan Adamson
+
+  A developer who left no documentation hid a password which their past employer requires for critical operations. Wanting to be irreplacable, the developer didn't leave any documentation or source code. Hints: reverse-engineer. test inputs. sloppy code - fix bug. find flag.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{kr3w ver tAErg}
+
+files:
+- PublicStaticVoidMainStringArgs.class
+
+version: '1.0'

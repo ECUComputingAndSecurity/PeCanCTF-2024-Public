@@ -1,0 +1,1 @@
+Flag is shown after completing the survey

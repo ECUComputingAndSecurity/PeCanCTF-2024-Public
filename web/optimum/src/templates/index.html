@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internal API Documentation - OPTIMUM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <style>
+            h1.corner {
+                margin: 0;
+                padding: 10px;
+                padding-top: 16px;
+                padding-right: 20px;
+                font-size: 36px;
+                background-color: teal;
+                color: white;
+                border-radius: 0 0 12px 0;
+                width: fit-content;
+            }
+        
+            body {
+                margin: 0;
+                font-family: sans-serif;
+            }
+            main {
+                margin: 15px;
+            }
+        
+            h1, h2, h3 {
+                font-family: "Josefin Sans", sans-serif;
+            }
+            h3.doc {
+                margin: 0.5em 0;
+            }
+            p.doc {
+                line-height: 1em;  
+                margin: 0.5em 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="corner">OPTIMUM TECHNOLOGIES</h1>
+        <main>
+            <h1>Internal API Documentation</h1>
+            <p>Here at Optimum technologies, we like to keep things simple, and this is reflected in our API documentation. We've made our internal API so easy to use that a child could do it! As this API should never ever be exposed to the internet, no authentication is required to view data, and no super complicated user ID scheme will get in the way of you writing code for it! Our users are numbered, with the first user being 0 and the number after the last user returning a 404 error. Enjoy the documentation!</p>
+            <h2>Endpoints</h2>
+            <h3 class="doc">/api/user/&lt;number&gt;</h3>
+            <p class="doc"><strong>Parameters:</strong> None</p>
+            <p class="doc"><strong>Returns:</strong> User object</p>
+            <br>
+            <h3 class="doc">/api/user/&lt;number&gt;/change_name</h3>
+            <p class="doc"><strong>Parameters:</strong> name=&lt;new name&gt;</p>
+            <p class="doc"><strong>Returns:</strong> Updated user object</p>
+            <br>
+            <h3 class="doc">/api/user/&lt;number&gt;/change_email</h3>
+            <p class="doc"><strong>Parameters:</strong> email=&lt;new email&gt;</p>
+            <p class="doc"><strong>Returns:</strong> Updated user object</p>
+            <br>
+            <h3 class="doc">/api/user/&lt;number&gt;/change_phone</h3>
+            <p class="doc"><strong>Parameters:</strong> phone=&lt;new phone number&gt;</p>
+            <p class="doc"><strong>Returns:</strong> Updated user object</p>
+            <br>
+            <h3 class="doc">/api/user/&lt;number&gt;/add_file</h3>
+            <p class="doc"><strong>Parameters:</strong> None, attach file</p>
+            <p class="doc"><strong>Returns:</strong> Status code (200 success)</p>
+            <br>
+            <h3 class="doc">/api/user/&lt;number&gt;/remove_file</h3>
+            <p class="doc"><strong>Parameters:</strong> file=&lt;file name&gt;</p>
+            <p class="doc"><strong>Returns:</strong> Status code (200 success)</p>
+            <br>
+            <h2>Data Formats</h2>
+            <p>All data that contains keys pairs is sent and received in JSON. Files are sent raw as their respective MIME types.</p>
+            <br>
+            <h3 class="doc">User object</h3>
+            <p class="doc">A user object contains the following fields; all strings unless otherwise stated: <strong>uid</strong> (int), <strong>name</strong>, <strong>email</strong>, <strong>phone</strong>, <strong>files</strong> (array of file paths)</p>
+            <br>
+            <h3 class="doc">Error object</h3>
+            <p class="doc">An error object returns upon an unsuccessful request and contains the following fields; all strings unless otherwise stated: <strong>error</strong></p>
+        </main>
+    </body>
+</html>

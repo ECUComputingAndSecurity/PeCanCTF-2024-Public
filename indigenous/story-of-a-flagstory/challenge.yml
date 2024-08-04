@@ -1,0 +1,26 @@
+name: Story of a flagstory
+author: Sam A. Try
+category: indigenous
+description: |-
+  Author: Sam A. Try
+
+  Look at the Google satellite images of some Australian cities. Find a city that has its main airport located south of the city centre. Around 20km north of that city, there is an Indigenous conservation site that has many rock engravings. There is a design that looks like an animal and the coal sack in the Milky Way. One of the Star Stories of the Dreaming centres on that animal and its place in the stars. The flag is the name of that story. It should look like this pattern: pecan{\*\*\*\_\*\*\_\*\*\*\_\*\*\*}, all in lower case.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{emu_in_the_sky}
+
+files:
+- City_1_H150000.jpg
+- City_2_P150000.jpeg
+- City_3_S150000.jpg
+
+version: '0.1'

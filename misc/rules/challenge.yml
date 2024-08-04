@@ -1,0 +1,18 @@
+name: rules
+author: pl4nty
+category: misc
+description: Please follow the rules for this CTF!
+type: dynamic
+
+extra:
+  initial: 100
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{i_play_by_the_rules}
+
+version: '0.1'

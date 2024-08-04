@@ -1,0 +1,4 @@
+[build]
+# First rpath: runs in the same directory
+# Second rpath: target/debug/outsource can link to ./libsimple_random.so
+rustflags = ["-C", "link-args=-Wl,-rpath,$ORIGIN/,-rpath,$ORIGIN/../../,-rpath,$ORIGIN/../../../lib/"]

@@ -1,0 +1,25 @@
+name: supercrypt
+author: Lachlan Adamson
+category: crypto
+description: |-
+  Author: Lachlan Adamson
+
+  A company has decided to write their own symmetric encryption tool since they 'care about their user's data'. Since the tool is private, they think it's more secure than using AES. Decrypt the ciphertext to find the flag.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{w15h-y0u-g00d-luck-cr4ck1ng-0th3r-fl4gs!}
+
+files:
+- cipher.txt
+- supercrypt.py
+
+version: '1.0'

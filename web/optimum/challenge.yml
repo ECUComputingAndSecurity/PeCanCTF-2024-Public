@@ -1,0 +1,29 @@
+name: Optimum
+author: Memphis Marshall
+category: web
+description: |-
+  Author: Memphis Marshall
+
+  I found this exposed API, maybe we can get some information from it?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: https
+
+flags:
+- type: static
+  content: pecan{y0u_w1ll_5ur31y_n07_r3gr37}
+  data: case_insensitive
+
+hints:
+- Enumerate enumerate enumerate!
+
+version: '0.1'
+tests:
+- solve.sh

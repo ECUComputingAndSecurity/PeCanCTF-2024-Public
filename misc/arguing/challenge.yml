@@ -1,0 +1,25 @@
+name: Arguing
+author: just jay i guess
+category: misc
+description: |-
+  Author: just jay i guess
+
+  The signals department picked up part of a transmission of some weird C code, and we think we found the compiled program. Can you work out what it does?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{wa1t_that5_an_4rgum3nt??}
+
+files:
+- argue
+- argue.c
+
+version: '0.1'

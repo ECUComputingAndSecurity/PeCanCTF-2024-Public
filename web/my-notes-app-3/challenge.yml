@@ -1,0 +1,22 @@
+name: My Notes App 3
+author: RiskyMH
+category: web
+description: |-
+  Author: RiskyMH
+
+  Do you like my notes app? I am wiling to bet ownership of my site that there are no important exploits
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+connection_info: https://my-notes-app.chals.ecusdf.org
+
+flags:
+- type: static
+  content: pecan{d0nt_w0rry_n0-0ne_wil1_f1nd!123}
+  data: case_insensitive
+
+version: '0.1'

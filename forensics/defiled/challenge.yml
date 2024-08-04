@@ -1,0 +1,25 @@
+name: deFILEd
+author: Winiata Lambert
+category: forensics
+description: |-
+  Author: Winiata Lambert
+
+  A file has been corrupted by a peculiar spell, rendering it unreadable.
+  By skilfully manipulating some enchanted digits, you can unveil the true nature of the file.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{hexpelliarmus}
+
+files:
+- priceless_artifact.png
+
+version: '0.1'

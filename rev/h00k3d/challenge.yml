@@ -1,0 +1,28 @@
+name: h00k3d
+author: Memphis Marshall
+category: rev
+description: |-
+  Author: Memphis Marshall
+
+  It looks like there's an issue processing the data from the library. Can you fix it and find the flag?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  content: pecan{b41t&5w1tch_08941f3093751172}
+  data: case_insensitive
+
+files:
+- h00k3d
+- libsimple_random.so
+
+version: '0.1'
+tests:
+- script: solve.sh
+  files: solution.c

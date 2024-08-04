@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <h1>Hello, World!</h1>
+    <p>Welcome to my awesome dynamic webpage!</p>
+
+    <div class="button-group">
+        <a href="/mynotes" class="button">
+            Your Notes!
+        </a>
+        {% if admin %}
+        <a href="/admin" class="button">
+            Admin
+        </a>
+        {% endif %}
+        <!-- <a href="/source" class="button">
+            The source!
+        </a> -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">
+            The best video!
+        </a>
+    </div>
+</div>
+{% endblock %}

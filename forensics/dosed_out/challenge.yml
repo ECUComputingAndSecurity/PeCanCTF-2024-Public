@@ -1,0 +1,27 @@
+name: DoS'ed out
+author: Lindsay Coudert
+category: forensics
+description: |-
+  Author: Lindsay Coudert
+
+  Our main server has been the target of a DoS attack, we need your help in tracking the attacker. What is the IP address of the attacker? What country did the attack originate from? How many packets with only the SYN flag did the attacker send?
+  The flag format is pecan{SourceIP_SourceCountry_SYNCount}
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{90.4.7.157_France_500}
+
+files:
+- McLaren_Synflood.pcap
+
+hints:
+- You can use the IP address to find the country of origin
+- Is there a way to filter for packets that only contain the SYN flag
+
+version: '0.1'
