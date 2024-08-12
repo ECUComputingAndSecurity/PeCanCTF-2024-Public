@@ -1,0 +1,24 @@
+name: CASSA Advanced Email System
+author: Jason Keo
+category: misc
+description: |-
+  Author: Jason Keo
+
+  You are given access to CASSA's advanced email system to investigate their messages. This challenge contains multiple parts (3) so, it could be helpful to read the emails in chronological order and do them in order. Note that some messages will be relevant while some might not be at all!!
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+image: .
+protocol: https
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{-140}
+
+version: '0.1'

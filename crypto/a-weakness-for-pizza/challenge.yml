@@ -1,0 +1,27 @@
+name: A weakness for pizza (ASD Challenge)
+author: Max Clayton, ASD-ANU Co-Lab
+category: crypto
+description: |-
+  Author: Max Clayton, ASD-ANU Co-Lab
+
+  We are on the trail of a gang of cyber criminals. One of the gang members was overheard talking about a message in which the gang leader congratulated his gang for some successes, but also told his gang members to stop leaving the operations area messy.
+
+  The gang member mentioned the word 'pizza' specifically. The gang member was also overheard mentioning something about a flag towards the end of a message. We have obtained a complete copy of the message. Our experts have taken a look at the message, and provided an analysis to help you decipher it.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{messy_hackers_safety_issue}
+
+files:
+- analysis.txt
+- message.txt
+
+version: '0.1'

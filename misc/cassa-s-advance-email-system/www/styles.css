@@ -1,0 +1,161 @@
+body {
+    min-width: 950px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.email-outer {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.email-box {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 5fr;
+}
+
+.topbar {
+    display: grid;
+    grid-template-rows: auto 70vh;
+}
+
+.topbar_box {
+    background-color: rgb(121, 121, 121);
+    min-height: 45px;
+    text-align: start;
+}
+
+.email-left-pane {
+    text-align: left;
+    background-color: rgb(67, 67, 67);
+    color: whitesmoke;
+}
+
+.email-address {
+    padding-right: 10px;
+}
+
+.email-address b {
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+.email-list {
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar {
+    overflow-y: scroll;
+    min-width: 200px;
+    padding-right: 10px;
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    text-align: start;
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    border-bottom: 0;
+}
+
+button:hover {
+    cursor: pointer;
+
+    background-color: hsl(0, 0%, 85%);
+}
+
+
+
+
+li:hover {
+    cursor: pointer;
+}
+
+.round {
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    font-size: 5px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(219, 227, 68);
+}
+
+.green {
+    background-color: rgb(45, 168, 45);
+}
+
+.search-input {
+    margin: 10px;
+    text-align: center;
+    width: 50vh;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.new-email-button {
+    border: none;
+    margin: 10px;
+    background-color: rgb(146, 203, 146);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.action-button {
+    border: none;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.email-content {
+    height: 70vh;
+    text-align: start;
+    overflow-y: scroll;
+
+}
+
+.email-image {
+    width: 300px;
+}
+
+.header {
+    font-size: 30px;
+    background-color: rgb(37, 91, 133);
+}
+
+.hide {
+    margin: 20px;
+}
+
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: normal;
+}
+
+#download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}

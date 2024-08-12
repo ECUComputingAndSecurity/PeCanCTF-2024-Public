@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="centered-text">
+    <div>
+        <h1>CASSA's Advance Email System</h1>
+    </div>
+
+    <div class="email-outer">
+        <div class="header">
+            <button class="round red"> - </button>
+            <button class="round yellow"> - </button>
+            <button class="round green"> - </button>
+            <input type="text" placeholder="🔍 Search" class="search-input">
+        </div>
+
+        <div class="email-box">
+            <div class="topbar email-left-pane">
+                <div class="topbar_box">
+                   <button id="click" class="new-email-button">New email</button>
+                </div>
+                <div class="email-address">
+                    <b>Cassapresident@outlook.com</b>
+                    <ul class="email-list">
+                        <li>><u>Inbox</u></li>
+                        <li>>Draft</li>
+                        <li>>Archive</li>
+                        <li>>Sent</li>
+                        <li>>Deleted items</li>
+                        <li>>Junk mail</li>
+                    </ul>
+                </div>
+            </div>
+<!-- you will need this for the next part -->
+<!-- https://cassa-advanced-email-system.chals.ecusdf.org/d5bacf8244bf82fd82c7f5559a6f6cf81a61124abf4e76029b6602c66bbbe071 -->
+            <div class="topbar email-sidebar">
+                <div class="topbar_box"></div>
+                <div class="sidebar">
+                    <div>
+                        <a><button id="b1" class="button"><h3>Photography</h3><h4>Patrick Squareman</h4><p class="mail"></button></a>
+                        <a><button id="b2" class="button"><h3>Weight Lifting Classes</h3><h4>Arnold Swarts</h4></button></a>
+                        <a> <button id="b3" class="button"><h3>Code debugging</h3><h4>Patrick Squareman</h4></button></a>
+                        <a><button id="b4" class="button"> <h3>Haircut</h3><h4>Tiffiny</h4></button></a>
+                        <a><button id="b5" class="button"><h3>CASSA Meeting</h3><h4>Wini </h4></button></a>
+                        <a><button id="b6" class="button"><h3>Robot help</h3><h4>Patrick Squareman</h4></button></a>
+                        <a><button id="b7" class="button"><h3>CASSA Desk Location</h3><h4>Jason</h4></button></a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="topbar email-main">
+                <div class="topbar_box">
+                    <button class="action-button">Delete</button>
+                    <button class="action-button">Archive</button>
+                    <button class="action-button">Flag</button>
+                    <button class="action-button">Report</button>
+                    <button class="action-button">Move</button>
+                </div>
+                <div class="email-content">
+                    <div id="1" class="hide">
+                        <h2>Photography</h2>
+                        <p> Hi there CASSA,<br><br>
+
+                            I'm Patrick Squareman. Recently I've gotten into photgraphing and I was wondering if you would be interested at tooking a<b><u> deeper look </u></b>into my photos and potentially hire me.<br><br>
+                            <br>
+                            <img src="cat.webp" class="email-image" /><br>
+                            <br>From,<br> Patrick Squareman
+
+                        </p>
+                    </div>
+
+                    <div id="2" class="hide">
+                        <h2>Weight Lifting Classes</h2>
+                        <p>Hello again,<br><br>
+                        Thanks for attending last weeks class. I hope you enjoyed it. I'm looking forward to seeing you all next week.<br><br>
+
+                        Strong Regards,<br> Arnold Swarts</p>
+                    </div>
+
+                    <div id="3" class="hide">
+                        <h2>Code debugging</h2>
+                        <p>Hello CASSA,<br><br>
+                            It's me again, your favourite squareman, Patrick Squareman.
+
+                            I was working on a video project when on some video project when my editor blurted out some error:
+                            <br><br>
+                            <b>YBBX NG GUR FBHEPR PBQR</b>
+                            <br><br>
+                            It looks to be some sort encrypted message, maybe you can help?
+
+                        <br><br>The one and only,<br> Patrick Squareman</p>
+
+
+                    </div>
+
+
+                    <div id="4" class="hide">
+                        <h2>Haircut</h2>
+                        <p>Greetings,<br><br>
+
+                            Just a reminder that your hair cut appoinment will be on at 9pm tommorow.
+
+
+                        <br>
+
+                        <br>See you then!<br> -Tiffiny
+                        </p>
+                    </div>
+
+                    <div id="5" class="hide">
+                        <h2>CASSA Meeting</h2>
+                        <p>Hello all,<br><br>
+                        Tommorow we are going to discuss very important stuff in a meeting so don't forget about our meeting tomorrow.<br>
+                        <br>From,<br> Wini</p>
+                    </div>
+
+                    <div id="6" class="hide">
+                        <h2>Robot help!</h2>
+                        <p>Hello again, Patrick Sqaureman here!<br><br>
+
+
+                        I suck at coding only, can you help?<br><br>
+
+                        <a href="./script.py" download="script.py"><button id="download">Download File ↓</button></a>
+
+                        <br>
+                        <br>See you when,<br> Patrick Squareman </p>
+                    </div>
+
+
+                    <div id="7" class="hide">
+
+                        <h2>CASSA Desk Location</h2>
+                        <p>Hello there!<br><br>
+                        CASSA's help desk is at building 18 on the second floor!! Don't be afraid to come visit us!<br><br>
+                        <a href="http://cassa.au" target="_blank"><img src="https://i.ibb.co/LzjNqy4/IMG-2945.jpg"></a>
+                        <br><br>From,<br> Cassa Committee</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html>

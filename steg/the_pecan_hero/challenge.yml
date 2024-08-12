@@ -1,0 +1,26 @@
+name: The Pecan+ Hero
+author: Tyler Schwehr
+category: steg
+description: |-
+  Author: Tyler Schwehr
+
+  The brilliant hero of this short story wins the brilliant Pecan+ competition. The brilliant hero stands next to the brilliant flag.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{t3@mw0rk_mak3s_7he_dre@m_w0rk}
+
+files:
+- the_pecan+_hero.txt
+
+hints:
+- The flag can be found next to the word brilliant
+- What type of encryption would change the letters but not the symbols?
+
+version: '0.1'

@@ -1,0 +1,1 @@
+Use a Steno gram program such as audacity and set the maximum frequency to 13k. View the resampled track as a spectrogram - through this, you will receive a ciphered flag that needs to be converted via rot13.

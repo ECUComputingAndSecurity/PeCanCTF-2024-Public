@@ -1,0 +1,26 @@
+name: Dropped it
+author: Tyler Schwehr
+category: crypto
+description: |-
+  Author: Tyler Schwehr
+
+  Bloody hell, I dropped the flag down the stairs again, I'm fairly certain that I saw it shift as it fell
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{dr0pp3d_17}
+
+files:
+- flag.txt
+
+hints:
+- You can convert numbers into characters with the chr() funtion in Python
+- The key shifts with each given character
+
+version: '0.1'

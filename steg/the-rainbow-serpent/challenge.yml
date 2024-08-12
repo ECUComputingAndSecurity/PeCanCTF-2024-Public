@@ -1,0 +1,24 @@
+name: The Rainbow Serpent
+author: Justin Stevens
+category: steg
+description: |-
+  Author: Justin Stevens
+
+  There is a message hidden within the text document about the rainbow serpent with STEGanography. So NOW, what program would you use to solve it?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{Th1S_sT0ry_T3llS_h0W_TRiBes_G0T_Th31r_TotEmS}
+
+files:
+- The_Rainbow_Serpent.txt
+
+version: '0.1'

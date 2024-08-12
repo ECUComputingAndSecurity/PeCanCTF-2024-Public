@@ -1,0 +1,24 @@
+name: AutomaTar-1
+author: Viet Huy Nguyen
+category: misc
+description: |-
+  Author: Viet Huy Nguyen
+
+  Find the flag in the zip file
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{y0u_f0und_th3_f1rst_1}
+
+files:
+- Es9ZY.tar.xz
+
+version: '0.1'

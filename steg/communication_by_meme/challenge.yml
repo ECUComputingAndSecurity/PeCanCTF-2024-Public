@@ -1,0 +1,25 @@
+name: Communication by meme
+author: Tyler Schwehr
+category: steg
+description: |-
+  Author: Tyler Schwehr
+
+  My friends and I have decided to communicate exclusively by memes, no-one will ever be able to read our messages.
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 2
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{s7r3553d_0u7}
+
+files:
+- funny_meme.jpg
+
+hints:
+- What is the EXIF data supposed to look like?
+
+version: '0.1'

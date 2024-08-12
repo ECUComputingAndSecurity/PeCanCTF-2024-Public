@@ -1,0 +1,24 @@
+name: Seeing is Believing
+author: Ming Leong
+category: steg
+description: |-
+  Author: Ming Leong
+
+  Oh no, my mixtape is gone!  I FREQUENTly unfortunately experienced file ROTs on my computer and now my mixtape is rotten. I spent up to 13k trying to fix my poor mixtape. Can you help me?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{t33-h33}
+
+files:
+- mixtape.wav
+
+version: '0.1'

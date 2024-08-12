@@ -1,0 +1,29 @@
+name: Where Is Tiddalick
+author: Justin Stevens
+category: indigenous
+description: |-
+  Author: Justin Stevens
+
+  Tiddalick is a dreamtime story from the eastern states, which tells the story of a large frog, called Tiddalick. Tiddalick drank all the water from all the rivers, creeks, lakes and waterholes. When the animals came to drink from the water hole the following morning they saw that there was no water. The animals joined together to make Tiddalick laugh so that he would spew the water back out. The echidna tried, the wombat tried, and the kookaburra tried, but Tiddalick did not laugh. The snake came along and rolled himself into a knot and got stuck. Tiddalick laughed so hard that water began to rush out of his mouth and all the water returned to the rivers, creeks, lakes and waterholes.
+
+  But where is Tiddalick? Where would be a place where waters would meet?
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- type: static
+  data: case_insensitive
+  content: pecan{The_word_Wollombi_means_Place_Where_Waters_Meet}
+
+files:
+- Where_Is_Tiddalick.JPG
+
+hints:
+  - I wonder why this challenge isn't in the OSINT category...
+
+version: '0.1'

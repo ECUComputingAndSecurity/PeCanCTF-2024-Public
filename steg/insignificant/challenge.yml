@@ -1,0 +1,27 @@
+name: Insignificant
+author: Tyler Schwehr
+category: steg
+description: |-
+  Author: Tyler Schwehr
+
+  I have intercepted this image from a messaging program, I am convinced that there is a secret message hidden within it.
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 4
+  function: linear
+  minimum: 100
+
+flags:
+- pecan{hi61ng_1n_pl@1n_51gh7}
+
+files:
+- message.jpg
+
+hints:
+- >-
+  Messages can be hidden at the binary level in images, using the least significant
+  bits
+
+version: '0.1'
